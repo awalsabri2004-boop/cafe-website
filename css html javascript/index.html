@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camper Cafe — Mobile Camper Cafe & Trail Outpost</title>
+  <meta name="description" content="A vintage 1974 camper turned specialty coffee bar and outdoor supply outpost. Specialty coffee, trail bakery, camp gear, and private event bookings.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span class="live-pulse"></span>
+      <span class="announcement-text"><strong>Today's Location:</strong> Pine Ridge Trailhead Overlook • Serving until 3:00 PM</span>
+      <a href="#schedule" class="announcement-link">View Route &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="header" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-icon">☕🚐</span>
+        <div class="logo-text">
+          <span class="brand-title">NOMAD &amp; BEAN</span>
+          <span class="brand-tag">CAMPER CAFE &bull; EST. 2021</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">Our Story</a>
+        <a href="#menu" class="nav-link">Cafe Menu</a>
+        <a href="#shop" class="nav-link">Camp Outpost</a>
+        <a href="#schedule" class="nav-link">Find The Camper</a>
+        <a href="#booking" class="nav-link">Book Events</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="openCartBtn" aria-label="Open Shopping Cart">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a href="#booking" class="btn btn-primary btn-sm nav-cta">Book The Van</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i data-lucide="compass"></i>
+          <span>Handcrafted on 4 Wheels</span>
+        </div>
+        <h1 class="hero-title">Brewed for the Trail.<br>Crafted for <em>Community</em>.</h1>
+        <p class="hero-desc">
+          We converted a vintage 1974 camper into a full-service solar-powered espresso bar. Catch us roaming scenic mountain passes, coastal trailheads, or book us for your private gathering.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary btn-lg">
+            <i data-lucide="coffee"></i>
+            <span>Explore Menu</span>
+          </a>
+          <a href="#shop" class="btn btn-outline btn-lg">
+            <i data-lucide="package"></i>
+            <span>Shop Beans &amp; Merch</span>
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="feature-item">
+            <div class="feature-icon"><i data-lucide="sun"></i></div>
+            <div class="feature-text">
+              <strong>100% Solar Rig</strong>
+              <span>Off-grid clean brewing</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i data-lucide="sparkles"></i></div>
+            <div class="feature-text">
+              <strong>Single-Origin Beans</strong>
+              <span>Ethically wild-sourced</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i data-lucide="map-pin"></i></div>
+            <div class="feature-text">
+              <strong>Roaming Weekly</strong>
+              <span>Follow the scent of roast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-image">
+          <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=900&q=80" alt="Vintage Camper Cafe serving coffee outdoors">
+          <span class="hero-card-status">
+            <span class="pulse-dot"></span> On Location
+          </span>
+        </div>
+        <div class="hero-card-body">
+          <div class="hero-location-header">
+            <h3>Pine Ridge Trailhead</h3>
+            <span class="dist-badge">0.4 miles away</span>
+          </div>
+          <p class="hero-location-sub">Look for the cream &amp; sage '74 camper parked under the giant pines.</p>
+          <div class="hero-status-details">
+            <div class="stat">
+              <span class="label">Hours Today</span>
+              <span class="val">7:30 AM – 3:00 PM</span>
+            </div>
+            <div class="stat">
+              <span class="label">Today's Special</span>
+              <span class="val">Campfire S'mores Latte</span>
+            </div>
+          </div>
+          <a href="#schedule" class="btn btn-secondary btn-block">See Full Weekly Schedule</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Story Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="img-wrapper main-img">
+            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80" alt="Specialty pour over coffee outdoor brewing">
+          </div>
+          <div class="img-wrapper floating-img">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Campfire in scenic pine forest">
+          </div>
+          <div class="experience-badge">
+            <span class="badge-num">50k+</span>
+            <span class="badge-lbl">Trail Cups Served</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-tag">
+            <i data-lucide="heart"></i>
+            <span>Born in the Backwoods</span>
+          </div>
+          <h2 class="section-title">The Story Behind the Camper</h2>
+          <p class="lead-text">
+            It started with an obsession for great coffee and the undeniable magic of crisp morning air by a campfire.
+          </p>
+          <p>
+            In 2021, we rescued a weathered 1974 camper trailer named <em>"Daisy"</em> from a barn in the Pacific Northwest. Over eight months, we retrofitted her with a commercial dual-boiler La Marzocco espresso machine, custom redwood service bars, and an all-electric solar battery bank.
+          </p>
+          <p>
+            Today, Nomad &amp; Bean brings cafe-quality pour-overs, botanical cordials, and house-baked pastries straight to wilderness trailheads, alpine weddings, and outdoor festivals.
+          </p>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <i data-lucide="feather" class="val-icon"></i>
+              <h4>Zero Trace</h4>
+              <p>Compostable cups, reusable tin returns, and carbon-neutral deliveries.</p>
+            </div>
+            <div class="value-card">
+              <i data-lucide="flame" class="val-icon"></i>
+              <h4>Micro-Batch Roasting</h4>
+              <p>Freshly roasted every Tuesday in small 12-lb batches for peak vibrancy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cafe Menu Section -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="coffee"></i>
+          <span>Seasonal Board</span>
+        </div>
+        <h2 class="section-title">Campfire Drinks &amp; Trail Bites</h2>
+        <p class="section-subtitle">Crafted with single-origin beans, house-made wild herbal syrups, and local dairy or oat milks.</p>
+      </div>
+
+      <!-- Menu Category Filters -->
+      <div class="filter-pills" id="menuFilters">
+        <button class="pill active" data-category="all">All Offerings</button>
+        <button class="pill" data-category="signature">Signature Brews</button>
+        <button class="pill" data-category="espresso">Classic Espresso</button>
+        <button class="pill" data-category="bakery">Trail Bakery</button>
+        <button class="pill" data-category="cold">Cold &amp; Refreshing</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <div class="menu-footer-note">
+        <p><i data-lucide="info"></i> Custom oat, almond, and whole milk options available at no extra charge. Bring your own camp tumbler for <strong>$0.50 off</strong> any beverage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Shop Section (Beans & Camp Goods) -->
+  <section class="section shop-section" id="shop">
+    <div class="container">
+      <div class="section-header-inline">
+        <div>
+          <div class="section-tag">
+            <i data-lucide="compass"></i>
+            <span>Outpost Provisions</span>
+          </div>
+          <h2 class="section-title">Shop Whole Beans &amp; Trail Gear</h2>
+          <p class="section-subtitle">Take the camper coffee experience home or pack it in your rucksack.</p>
+        </div>
+
+        <div class="shop-filter-pills" id="shopFilters">
+          <button class="pill active" data-shop="all">All Goods</button>
+          <button class="pill" data-shop="beans">Roast Beans</button>
+          <button class="pill" data-shop="gear">Camp Gear</button>
+          <button class="pill" data-shop="merch">Apparel</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="shop-grid" id="shopGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule / Find the Camper Section -->
+  <section class="section schedule-section" id="schedule">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="map"></i>
+          <span>Live Coordinates</span>
+        </div>
+        <h2 class="section-title">This Week's Trail Route</h2>
+        <p class="section-subtitle">We roam between national park trailheads, farmers markets, and coastal viewpoints.</p>
+      </div>
+
+      <div class="schedule-container">
+        <div class="schedule-card-list" id="scheduleList">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <div class="schedule-sidebar">
+          <div class="weather-alert-box">
+            <div class="alert-icon"><i data-lucide="cloud-sun"></i></div>
+            <div>
+              <h4>Trail Weather Notice</h4>
+              <p>If winds exceed 35mph or heavy snow blankets the pass, check our live Instagram stories <strong>@nomadandbean</strong> for emergency spot updates.</p>
+            </div>
+          </div>
+
+          <div class="catering-cta-card">
+            <div class="card-camper-tag">Special Occasions</div>
+            <h3>Want Us at Your Campsite?</h3>
+            <p>From alpine elopements to trail marathon finish lines, we bring the cafe anywhere with four-wheel drive access.</p>
+            <a href="#booking" class="btn btn-primary btn-block">Inquire About Dates</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Booking Section -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <div class="section-tag light">
+            <i data-lucide="calendar"></i>
+            <span>Private Rig Hire</span>
+          </div>
+          <h2 class="booking-heading">Reserve the Camper for Your Next Event</h2>
+          <p class="booking-desc">
+            We pull up, open the wooden awnings, and treat your guests to unlimited handcrafted espresso drinks, pour-overs, and artisan snacks.
+          </p>
+
+          <ul class="booking-perks">
+            <li>
+              <div class="perk-icon"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <strong>Two Dedicated Baristas</strong>
+                <p>Fast, friendly, specialty cafe service with custom drink menus.</p>
+              </div>
+            </li>
+            <li>
+              <div class="perk-icon"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <strong>100% Off-Grid Capable</strong>
+                <p>Whisper-quiet solar battery setup requires zero noisy generators or power hookups.</p>
+              </div>
+            </li>
+            <li>
+              <div class="perk-icon"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <strong>Custom Branding &amp; Stencil Art</strong>
+                <p>Personalized drink stamps, cups, and custom menu chalkboard titles.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="booking-testimonial">
+            <p>"Having Nomad &amp; Bean pull up to our forest wedding was the highlight of the morning. Every guest couldn't stop talking about the Camper and the cardamom lattes!"</p>
+            <div class="author">&mdash; Elena &amp; Marcus, Big Sur Wedding</div>
+          </div>
+        </div>
+
+        <div class="booking-form-card">
+          <h3>Request a Booking Quote</h3>
+          <p class="form-sub">Fill out the trail dispatch below and we'll reply within 24 hours.</p>
+
+          <form id="bookingForm" class="booking-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookName">Your Name</label>
+                <input type="text" id="bookName" name="name" placeholder="Sierra Brooks" required>
+              </div>
+              <div class="form-group">
+                <label for="bookEmail">Email Address</label>
+                <input type="email" id="bookEmail" name="email" placeholder="sierra@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="eventType">Event Type</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="" disabled selected>Select event style...</option>
+                  <option value="Wedding / Elopement">Wedding / Elopement</option>
+                  <option value="Outdoor Festival / Gathering">Outdoor Festival / Gathering</option>
+                  <option value="Corporate Retreat">Corporate Retreat</option>
+                  <option value="Trail Run / Sporting Event">Trail Run / Sporting Event</option>
+                  <option value="Birthday / Anniversary">Private Celebration</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="guestCount">Estimated Guests</label>
+                <select id="guestCount" name="guestCount" required>
+                  <option value="" disabled selected>Number of guests...</option>
+                  <option value="Under 40">Under 40 guests</option>
+                  <option value="40 - 80">40 - 80 guests</option>
+                  <option value="80 - 150">80 - 150 guests</option>
+                  <option value="150+">150+ guests</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="eventDate">Desired Date</label>
+                <input type="date" id="eventDate" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="eventLocation">Event Location / City</label>
+                <input type="text" id="eventLocation" name="location" placeholder="e.g. Whispering Pines Camp, Tahoe" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="eventNotes">Tell Us About Your Vision</label>
+              <textarea id="eventNotes" name="notes" rows="3" placeholder="Tell us about the vibes, special drink requests, or access notes for the camper trailer..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBookingBtn">
+              <i data-lucide="send"></i>
+              <span>Send Booking Dispatch</span>
+            </button>
+          </form>
+
+          <!-- Booking Success State (hidden by default) -->
+          <div class="booking-success" id="bookingSuccess">
+            <div class="success-icon"><i data-lucide="check-circle"></i></div>
+            <h4>Trail Dispatch Received!</h4>
+            <p>Thanks for reaching out! We've parked your request in our dispatch queue. Our team will review the camper's availability and email you an exact quote within 24 hours.</p>
+            <button class="btn btn-outline btn-sm" id="resetBookingBtn">Submit Another Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery / Instagram Vibe -->
+  <section class="section gallery-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="camera"></i>
+          <span>Camp Moments</span>
+        </div>
+        <h2 class="section-title">Follow the Scent of Roast</h2>
+        <p class="section-subtitle">Tag <strong>#NomadAndBean</strong> to be featured on our trail wall.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Fresh artisan coffee">
+          <div class="gallery-overlay">
+            <i data-lucide="instagram"></i>
+            <span>@nomadandbean</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=600&q=80" alt="Camping tent in morning woods">
+          <div class="gallery-overlay">
+            <i data-lucide="instagram"></i>
+            <span>Morning camp wake up</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Artisan latte art in outdoor mug">
+          <div class="gallery-overlay">
+            <i data-lucide="instagram"></i>
+            <span>Oat milk cortado</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=600&q=80" alt="Vintage camper parked at sunset">
+          <div class="gallery-overlay">
+            <i data-lucide="instagram"></i>
+            <span>Golden hour at the pass</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <span class="logo-icon">☕🚐</span>
+          <div class="logo-text">
+            <span class="brand-title">NOMAD &amp; BEAN</span>
+            <span class="brand-tag">ROAMING SPECIALTY CAFE</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Crafting thoughtful coffee, supporting local growers, and leaving every campsite cleaner than we found it.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="Mail"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Our Camper Story</a></li>
+          <li><a href="#menu">Drinks &amp; Bites</a></li>
+          <li><a href="#shop">Outpost Store</a></li>
+          <li><a href="#schedule">Route Schedule</a></li>
+          <li><a href="#booking">Book the Camper</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours &amp; Outpost</h4>
+        <ul class="footer-info">
+          <li><strong>Wed - Fri:</strong> 7:30 AM &ndash; 2:30 PM</li>
+          <li><strong>Sat - Sun:</strong> 7:00 AM &ndash; 4:00 PM</li>
+          <li><strong>Base Camp:</strong> Cascade Range, OR</li>
+          <li><strong>Dispatch:</strong> hello@nomadandbean.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4>Join the Campfire Club</h4>
+        <p>Subscribe for weekly location drops and get 15% off your first bag of trail-roasted beans.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your trail email..." required>
+          <button type="submit" class="btn btn-primary btn-sm">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 Nomad &amp; Bean Camper Cafe. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Route</a>
+          <a href="#">Leave No Trace Commitment</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Shopping Cart Drawer -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Cart drawer">
+    <div class="cart-header">
+      <div class="cart-header-title">
+        <i data-lucide="shopping-bag"></i>
+        <h3>Your Camp Rucksack</h3>
+        <span class="badge" id="cartBadgeCount">0 items</span>
+      </div>
+      <button class="cart-close" id="closeCartBtn" aria-label="Close cart">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="free-shipping-bar">
+      <div class="shipping-text" id="shippingMessage">Add $45 for free trail delivery</div>
+      <div class="progress-track">
+        <div class="progress-fill" id="shippingProgress" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items List -->
+    <div class="cart-items" id="cartItemsContainer">
+      <!-- Populated via app.js -->
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span class="amount" id="cartSubtotal">$0.00</span>
+      </div>
+      <p class="cart-tax-notice">Taxes and trail shipping calculated at checkout.</p>
+      <button class="btn btn-primary btn-block btn-lg" id="checkoutBtn">
+        <i data-lucide="lock"></i>
+        <span>Proceed to Checkout</span>
+      </button>
+      <button class="btn btn-text btn-block" id="continueShoppingBtn">Continue Browsing</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModalBtn"><i data-lucide="x"></i></button>
+      <div class="modal-header">
+        <span class="modal-icon">☕📦</span>
+        <h3>Simulated Trail Checkout</h3>
+        <p>This is a working interactive prototype demonstrating the cart &amp; checkout flow.</p>
+      </div>
+
+      <div class="modal-order-summary" id="modalOrderSummary">
+        <!-- Rendered by JS -->
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-group">
+          <label>Shipping Name</label>
+          <input type="text" placeholder="John Muir" required>
+        </div>
+        <div class="form-group">
+          <label>Trail Delivery Address</label>
+          <input type="text" placeholder="742 Evergreen Ridge Rd, Apt 4" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Payment Method</label>
+            <select>
+              <option>Apple Pay / Google Pay</option>
+              <option>Credit / Debit Card</option>
+              <option>Camper Gift Token</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Promo Code</label>
+            <input type="text" placeholder="TRAIL15">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">Complete Order Demo</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <i data-lucide="check" class="toast-icon"></i>
+    <span id="toastMessage">Item added to your rucksack!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
